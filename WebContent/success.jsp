@@ -1,0 +1,93 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: AquaBusiness
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>AquaBusiness</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="css/tablenew2.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="datetimepicker.js">
+</script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+<script type="text/javascript">
+
+function valid()
+{
+var a=document.s.filename.value;
+if(a=="")
+{
+alert("Enter Filename Name");
+document.s.filename.focus();
+return false;
+}
+var b=document.s.date.value;
+if(b=="")
+{
+alert("Choose Date");
+document.s.date.focus();
+return false;
+}
+var c=document.s.keypoints.value;
+if(c=="")
+{
+alert("Enter Keypoints");
+document.s.keypoints.focus();
+return false;
+}
+}
+</script>
+</head>
+<body id="top">
+<div class="wrapper col1">
+  
+</div>
+<div class="wrapper col2">
+  <div id="header"><center><font size="+2" color="#FFFFFF" >SmartCrawler: A Two-stage Crawler for
+Efficiently Harvesting Deep-Web Interfaces </font></center>
+    <div class="fl_left">
+      <h1><a href="#"> </a></h1>
+      <p></p>
+    </div>
+    <ul id="topnav">
+     <li class="last"><a href="adminpage.jsp" class="active">Upload File</a></li>
+      <li><a href="update.jsp">Update</a>
+      
+     <li><a href="userview.jsp">user Details</a>
+     
+   <li><a href="graph.jsp">Graph view</a>
+   
+  
+      
+    </ul>
+    <br class="clear" />
+  </div>
+</div>
+<div class="wrapper col3">
+ <%
+			String ans=(String)session.getAttribute("ans");
+			String filename=(String)session.getAttribute("filename");
+		%>
+
+
+  </div>
+  
+  <table class="newtb1" align="center" >
+  <tr><td>		<p>&nbsp;</p><img src="images/success.jpg"/>   <p>&nbsp;</p>
+   <p>&nbsp;</p></td></tr>
+        </table>
+ 
+
+</div>
+
+</body>
+</html>
